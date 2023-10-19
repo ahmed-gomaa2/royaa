@@ -1,0 +1,105 @@
+.Team {
+    height: calc(100vh - 60px);
+    width: 100%;
+    position: relative;
+}
+
+.Team__backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background: red;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.Team__backdrop--left {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(45deg, purple, deeppink);
+}
+
+.Team__backdrop--right {
+    width: 70%;
+    height: 100%;
+    color: white;
+    position: relative;
+}
+
+.Team__backdrop--gray {
+    width: 50px;
+    height: 50px;
+    background: #efeeee;
+    position: absolute;
+    top: 30px;
+    right: 30%;
+    border-radius: 10px;
+}
+
+.Team__backdrop--purple {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, purple, pink);
+    right: 10%;
+    top: 60px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.Team__container {
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Team__header {
+    text-align: center;
+}
+
+.Team__header p {
+    color: gray;
+}
+
+.Team__members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.Team__member {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 150px;
+    background: white;
+    min-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Team__member--avatar {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.Team__member--avatar img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Team__member--details {
+    padding: 20px;
+}

@@ -1,0 +1,115 @@
+.Services {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Services__sideElem {
+    position: absolute;
+    top: 50%;
+    left: -420px;
+    transform: translateY(-50%) rotate(45deg);
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, purple, rebeccapurple);
+    opacity: 0.9;
+}
+
+.Services__container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Services__header {
+    text-align: center;
+}
+
+.Services__header p {
+    color: gray;
+    font-size: 15px;
+}
+
+.Services__content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Services__right {
+    width: 30%;
+    padding: 30px;
+    padding-right: 200px;
+
+}
+
+.Services__left {
+    padding: 30px;
+    padding-left: 200px;
+    width: 30%;
+
+}
+
+.Services__left--items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    direction: rtl;
+}
+
+.Services__middle {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Services__middle--items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.Services__middle--item {
+    width: 33%;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.Services__middle--item img {
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.Services__middle--item-backdrop {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    background: purple;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    outline: 10px solid #9d009d;
+}
+
